@@ -330,7 +330,16 @@ ul.social-icons li a.youtube:hover {
     white-space: nowrap;
 }
 
-
+/* Enrollment form css  */
+#enroll-h1{
+        align-self: center;
+    display: flex;
+    align-items: center;
+    font-family: revert;
+    justify-content: space-evenly;
+    color: blueviolet;
+}
+/* enrollment css end  */
 
 
 
