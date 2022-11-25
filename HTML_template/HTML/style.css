@@ -1,0 +1,188 @@
+
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#main {
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+
+
+#page1 {
+    height: 100vh;
+    width: 100vw;
+
+}
+
+#navBar {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: rgb(248, 243, 215);
+}
+
+#menu>a {
+    padding-right: 20px;
+    text-decoration: none;
+}
+
+
+#frontPage {
+    height: 80%;
+    width: 100%;
+    background-image: url(https://images.prismic.io/prodigy-website/5f44ca1b-21fe-4eca-aaac-a4a3b16dd553_educational-resources-for-parents.jpg?&rect=0,155,1254,418&w=1920&h=640);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#frontPage>div {
+    height: 40vh;
+    width: 30vw;
+    padding-top: 80px;
+    padding-left: 50px;
+    line-height: 30px;
+}
+
+#frontPage>div>h5 {
+    font-size: 20px;
+}
+
+#frontPage>div>h2 {
+    font-size: 30px;
+
+}
+
+#frontPage>div>p {
+    line-height: 15px;
+}
+
+#more {
+    display: none;
+}
+
+#myBtn {
+    border-color: blue;
+    background-color: blue;
+    color: white;
+    height: 30px;
+    width: 80px;
+    border-radius: 8%;
+}
+
+
+
+/* aboutUs */
+#aboutUs{
+    margin: auto;
+    height: 60%;
+    width: 60%;
+}
+#aboutUs>div{
+    padding-top: 20px;
+    display: flex;  
+    margin: 20px;
+}
+#aboutUs>hr{
+    margin-top: 20px;
+}
+#aboutUs>div>img{
+    height: 40%;
+    width: 40%;
+    object-fit: cover;
+}
+#aboutUs>div>div{
+    height: 40%;
+    width: 40%;
+    margin-left: 40px;
+    
+}
+#aboutUs>div>div>p{
+    margin-top: 30px;
+}
+
+
+
+#ourBabysitter{
+    padding-top: 25px;
+    width: 60%;
+    margin-left: 10%;
+    
+}
+#ourBabysitter>hr{
+    width: 60%;
+    margin-left: 30%;
+}
+#ourBabysitter>h2{
+    margin-left: 60vh;
+    font-size: 4vh;
+}
+
+
+#cards{
+    padding-top: 20px;
+    margin-left: 25vh;
+    width: 90%;
+    white-space: nowrap;
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+#card{
+    /* display:inline-block; */
+    display: flex;
+    width: 70%;
+    margin-left: 2vh;
+    padding: 15px;
+    box-shadow: 10px 10px 5px lightblue;
+    margin-bottom: 20px;
+}
+#cardImg{
+    height: 150px;
+    width: 150px;
+}
+
+
+#cardImg>img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid black;
+}
+
+#name{
+    margin-left: -10px;
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 110px;
+    width: 110px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: rgb(148, 201, 231);
+}
+#cardBtn{
+    background-color: rgb(148, 201, 231);
+    border: none;
+    color: white;
+    font-weight: 600;
+}
+#cardBtn:hover{
+    cursor: pointer;
+}
