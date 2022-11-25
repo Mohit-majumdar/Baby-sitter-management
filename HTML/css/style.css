@@ -334,4 +334,40 @@ ul.social-icons li a.youtube:hover {
 
 
 
+/* services page start */
+
+#bcs{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#cardsBcs{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+#bcsCard{
+    display: flex;
+    margin: 5vh 7vh;
+}
+#bcsCard>img{
+    height: 25vh;
+    width: 20vh;
+    object-fit: cover;
+}
+
+#bcsCard>div{
+    margin-left: 5vh;
+    
+}
+#bcsCard>div>p{
+    margin-top: 2vh;
+    width: 29vh;
+}
+
+/* services page end */
+
+
 
