@@ -293,10 +293,11 @@ body {
 ul.social-icons {
     margin: 0 1000px;
 }
+
 ul.social-icons li {
     display: inline-block;
     margin: 0 5px;
-    
+
 
 }
 
@@ -326,52 +327,55 @@ ul.social-icons li a.youtube:hover {
 }
 
 
-#copyright{
+#copyright {
     white-space: nowrap;
 }
 
 /* Enrollment form css  */
-#enroll-h1{
-        align-self: center;
+#enroll-h1 {
+    align-self: center;
     display: flex;
     align-items: center;
     font-family: revert;
     justify-content: space-evenly;
     color: blueviolet;
 }
+
 /* enrollment css end  */
 
 
 
 /* services page start */
 
-#bcs{
+#bcs {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
 
-#cardsBcs{
+#cardsBcs {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
 
-#bcsCard{
+#bcsCard {
     display: flex;
     margin: 5vh 7vh;
 }
-#bcsCard>img{
+
+#bcsCard>img {
     height: 25vh;
     width: 20vh;
     object-fit: cover;
 }
 
-#bcsCard>div{
+#bcsCard>div {
     margin-left: 5vh;
-    
+
 }
-#bcsCard>div>p{
+
+#bcsCard>div>p {
     margin-top: 2vh;
     width: 29vh;
 }
@@ -383,41 +387,183 @@ ul.social-icons li a.youtube:hover {
 
 
 
- /* babysitters details start  */
+/* babysitters details start  */
 
-#bsDetails{
+#bsDetails {
     margin: 2% 20%;
 }
 
-#bsDetails>h2{
+#bsDetails>h2 {
     display: flex;
     justify-content: center;
 }
 
-#ourBsCards{
+#ourBsCards {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
 
-.obsCard{
+.obsCard {
     height: 25vh;
     width: 28vw;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
-.obsCard>img{
+
+.obsCard>img {
     height: 15vh;
     width: 12vh;
     object-fit: cover;
     justify-content: space-between;
 }
- /* babysitters details Ends  */
+
+/* babysitters details Ends  */
 
 
 
 
 
+
+
+
+
+
+/* Admin login page start */
+
+
+#mainAdmin {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#adminCard {
+    overflow: hidden;
+    height: 43vh;
+    width: 40vh;
+    border: 1px solid grey;
+    border-top: 3px solid blue;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    border-radius: 1%;
+    position: absolute;
+}
+
+#adminCard>hr {
+    width: 100%;
+    border: 0.5px solid rgba(184, 184, 184, 0.354);
+}
+
+#adminInputs {
+    height: 4vh;
+    width: 17vw;
+    padding: 0 1vh;
+}
+
+#adminCard>button:hover {
+    cursor: pointer;
+}
+#adminCard>button {
+    background-color: blue;
+    color: white;
+    padding: 2px 4px;
+    border: 2px solid transparent;
+    border-radius: 8%;
+    position: absolute;
+    bottom: 20%;
+    right: 10%;
+}
+
+.btmAtag {
+    position: absolute;
+    left: 10%;
+    bottom: 5%;
+    text-decoration: none;
+}
+
+.btmAtag:last-child {
+    position: absolute;
+    left: 10%;
+    bottom: 11%;
+}
+
+#atags {
+    height: 10vh;
+}
+
+/* Admin login page ends */
+
+
+
+
+
+
+/* Contact us start */
+
+#contactUs{
+
+    width: 110vh;
+    height: 68vh;
+    margin: auto;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#thricards{
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.contCard{
+    width:  50vh ;
+    padding: 2px 5px;
+    margin: 0 2%;
+    border: 2px solid white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.457), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#contInps{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 130%;
+}
+#contInps>input{
+    margin: 5px;
+    padding: 4px;
+
+}
+#LstInp{
+    width: 198%;
+    height: 90%;
+    margin-left: 5px;
+    padding: 0 5px;
+    resize: none;
+}
+
+#contactUs>button{
+    width: 128%;
+    padding: 2px 4px;
+    font-size: 2.5vh;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Contact us ends */
 
 
 
