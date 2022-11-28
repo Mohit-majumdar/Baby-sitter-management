@@ -1,0 +1,16 @@
+.page_margin{
+   
+    margin-bottom: 20vh;
+    margin-top: 10vh;
+}
+
+.primary-h1{
+    color: blue;
+}
+
+.address{
+    margin-top: 10vh;
+}
+.address > h5{
+    color: blue;
+}
