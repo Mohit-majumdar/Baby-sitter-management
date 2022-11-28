@@ -1,235 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>BabySitter-Management</title>
-    <link rel="stylesheet" href="./css/style.css" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-  </head>
 
-  <body>
-    <div id="main">
-      <!-- home div start here -->
-      <div id="home">
-        <div id="page1">
-          <div id="navBar">
-            <h3>Baby Day Care Management System</h3>
-            <div id="menu">
-              <a href="./">Home</a>
-              <a href="./about.html">About</a>
-              <a href="./services.html">Services</a>
-              <a href="">Enroll</a>
-              <a href="">Babysitter</a>
-              <a href="">Contact Us</a>
-              <a href="">Admin</a>
-            </div>
-          </div>
-          <div id="frontPage">
-            <div>
-              <h5>Baby caretaker</h5>
-              <h2>BEST BABYSITTING SERVICE</h2>
-              <p>
-                Lorem ipsum dolor sit amet,as vitae scel<span id="dots"
-                  >...</span
-                ><span id="more"
-                  >erisque enim ligula venenatis doloenenatis. Integer fringilla
-                  congue eros non fermentum. Sed dapibus pulvinar nibh tempor
-                  porta.</span
-                >
-              </p>
-              <button onclick="myFunction()" id="myBtn">Read more</button>
-            </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BabySitter-Management</title>
+  <link rel="stylesheet" href="./css/style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <div id="main">
+    <!-- home div start here -->
+    <div id="home">
+      <div id="page1">
+        <div id="navBar">
+          <h3>Baby Day Care Management System</h3>
+          <div id="menu">
+            <a href="./">Home</a>
+            <a href="./about.html">About</a>
+            <a href="./services.html">Services</a>
+            <a href="./enrollForm.html">Enroll</a>
+            <a href="./babySitter.html">Babysitter</a>
+            <a href="">Contact Us</a>
+            <a href="">Admin</a>
           </div>
         </div>
-        <div id="aboutUs">
-          <h3>About Us</h3>
-          <hr />
+        <div id="frontPage">
           <div>
-            <img
-              src="https://safesitter.org/wp-content/uploads/2019/04/5-things-your-babysitter-secretly-wants-you-to-know.jpg"
-            />
-            <div>
-              <h2>About Us</h2>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Repellendus inventore beatae quod dolor perferendis sunt,
-                facilis ad voluptatem deleniti soluta quas enim perspiciatis,
-                quibusdam suscipit corrupti velit voluptatum architecto sint.
-              </p>
+            <h5>Baby caretaker</h5>
+            <h2>BEST BABYSITTING SERVICE</h2>
+            <p>
+              Lorem ipsum dolor sit amet,as vitae scel<span id="dots">...</span><span id="more">erisque enim ligula
+                venenatis doloenenatis. Integer fringilla
+                congue eros non fermentum. Sed dapibus pulvinar nibh tempor
+                porta.</span>
+            </p>
+            <button onclick="myFunction()" id="myBtn">Read more</button>
+          </div>
+        </div>
+      </div>
+      <div id="aboutUs">
+        <h3>About Us</h3>
+        <hr />
+        <div>
+          <img
+            src="https://safesitter.org/wp-content/uploads/2019/04/5-things-your-babysitter-secretly-wants-you-to-know.jpg" />
+          <div>
+            <h2>About Us</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Repellendus inventore beatae quod dolor perferendis sunt,
+              facilis ad voluptatem deleniti soluta quas enim perspiciatis,
+              quibusdam suscipit corrupti velit voluptatum architecto sint.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div id="ourBabysitter">
+        <h2>Our Babysitters</h2>
+        <hr />
+        <div id="cards">
+          <div id="card">
+            <div id="cardImg">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Elon_Musk_Royal_Society_%28crop2%29.jpg/1200px-Elon_Musk_Royal_Society_%28crop2%29.jpg"
+                alt="" />
+            </div>
+            <div id="name">
+              <p>Arjun sarkar</p>
+              <button id="cardBtn">view details</button>
+            </div>
+          </div>
+          <div id="card">
+            <div id="cardImg">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Elon_Musk_Royal_Society_%28crop2%29.jpg/1200px-Elon_Musk_Royal_Society_%28crop2%29.jpg"
+                alt="" />
+            </div>
+            <div id="name">
+              <p>Arjun sarkar</p>
+              <button id="cardBtn">view details</button>
+            </div>
+          </div>
+          <div id="card">
+            <div id="cardImg">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Elon_Musk_Royal_Society_%28crop2%29.jpg/1200px-Elon_Musk_Royal_Society_%28crop2%29.jpg"
+                alt="" />
+            </div>
+            <div id="name">
+              <p>Arjun sarkar</p>
+              <button id="cardBtn">view details</button>
             </div>
           </div>
         </div>
-        <div id="ourBabysitter">
-          <h2>Our Babysitters</h2>
-          <hr />
-          <div id="cards">
-            <div id="card">
-              <div id="cardImg">
-                <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Elon_Musk_Royal_Society_%28crop2%29.jpg/1200px-Elon_Musk_Royal_Society_%28crop2%29.jpg"
-                  alt=""
-                />
-              </div>
-              <div id="name">
-                <p>Arjun sarkar</p>
-                <button id="cardBtn">view details</button>
-              </div>
-            </div>
-            <div id="card">
-              <div id="cardImg">
-                <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Elon_Musk_Royal_Society_%28crop2%29.jpg/1200px-Elon_Musk_Royal_Society_%28crop2%29.jpg"
-                  alt=""
-                />
-              </div>
-              <div id="name">
-                <p>Arjun sarkar</p>
-                <button id="cardBtn">view details</button>
-              </div>
-            </div>
-            <div id="card">
-              <div id="cardImg">
-                <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Elon_Musk_Royal_Society_%28crop2%29.jpg/1200px-Elon_Musk_Royal_Society_%28crop2%29.jpg"
-                  alt=""
-                />
-              </div>
-              <div id="name">
-                <p>Arjun sarkar</p>
-                <button id="cardBtn">view details</button>
-              </div>
-            </div>
-          </div>
-        </div>
+      </div>
 
-        <!-- footer start  -->
-        <div id="footer">
-          <!-- <h2>Join Our Newsletter Now</h2>
+      <!-- footer start  -->
+      <div id="footer">
+        <!-- <h2>Join Our Newsletter Now</h2>
                 <div>
                     <input type="text" value="Email">
                     <button>Subscribe</button>
                 </div>
                 <p>&#169 2022 Baby Day Care Management System</p> -->
-          <!-- Newsletter start  -->
-          <div class="w3lsnewsletter" id="w3lsnewsletter">
-            <div class="container">
-              <div class="w3lsnewsletter-grids">
-                <div
-                  class="col-md-5 w3lsnewsletter-grid w3lsnewsletter-grid-1 subscribe"
-                >
-                  <p>Subscribe to our Newsletter</p>
-                </div>
-                <div
-                  class="col-md-7 w3lsnewsletter-grid w3lsnewsletter-grid-2 email-form"
-                >
-                  <form action="#" method="post">
-                    <input
-                      class="email"
-                      type="email"
-                      name="Email"
-                      placeholder="Email Address"
-                      required=""
-                    />
-                    <input type="submit" class="submit" value="SUBSCRIBE" />
-                  </form>
-                </div>
-                <div class="clearfix"></div>
+        <!-- Newsletter start  -->
+        <div class="w3lsnewsletter" id="w3lsnewsletter">
+          <div class="container">
+            <div class="w3lsnewsletter-grids">
+              <div class="col-md-5 w3lsnewsletter-grid w3lsnewsletter-grid-1 subscribe">
+                <p>Subscribe to our Newsletter</p>
               </div>
+              <div class="col-md-7 w3lsnewsletter-grid w3lsnewsletter-grid-2 email-form">
+                <form action="#" method="post">
+                  <input class="email" type="email" name="Email" placeholder="Email Address" required="" />
+                  <input type="submit" class="submit" value="SUBSCRIBE" />
+                </form>
+              </div>
+              <div class="clearfix"></div>
             </div>
           </div>
-          <!-- Newsletter end -->
-
-          <!-- copyright start  -->
-          <div class="w3lscopyrightaits">
-            <div class="col-md-4 w3lscopyrightaitsgrid w3lscopyrightaitsgrid2">
-              <div class="agilesocialwthree">
-                <div id="copyright">
-                    &#169 All Right Reserved . its Free 2022
-                </div>
-                <ul class="social-icons">
-                  <li>
-                    <a
-                      href="#"
-                      class="facebook w3ls"
-                      title="Go to Our Facebook Page"
-                      ><i
-                        class="fa-brands w3ls fa-square-facebook"
-                        aria-hidden="true"
-                      ></i
-                    ></a>
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      class="twitter w3l"
-                      title="Go to Our Twitter Account"
-                      ><i
-                        class="fa-brands w3l fa-square-twitter"
-                        aria-hidden="true"
-                      ></i
-                    ></a>
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      class="googleplus w3"
-                      title="Go to Our Google Plus Account"
-                      ><i
-                        class="fa-brands w3 fa-square-google-plus"
-                        aria-hidden="true"
-                      ></i
-                    ></a>
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      class="instagram wthree"
-                      title="Go to Our Instagram Account"
-                      ><i class="fa-brands wthree fa-square-instagram" aria-hidden="true"></i
-                    ></a>
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      class="youtube w3layouts"
-                      title="Go to Our Youtube Channel"
-                      ><i
-                        class="fa-brands w3layouts fa-square-youtube"
-                        aria-hidden="true"
-                      ></i
-                    ></a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="clearfix"></div>
-          </div>
-          <!-- copyright end -->
         </div>
-         <!-- footer end  -->
-      </div>
-      <!-- home div end -->
-    </div>
+        <!-- Newsletter end -->
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-      crossorigin="anonymous"
-    ></script>
-    <script src="./js/script.js"></script>
-  </body>
+        <!-- copyright start  -->
+        <div class="w3lscopyrightaits">
+          <div class="col-md-4 w3lscopyrightaitsgrid w3lscopyrightaitsgrid2">
+            <div class="agilesocialwthree">
+              <div id="copyright">
+                &#169 All Right Reserved . its Free 2022
+              </div>
+              <ul class="social-icons">
+                <li>
+                  <a href="#" class="facebook w3ls" title="Go to Our Facebook Page"><i
+                      class="fa-brands w3ls fa-square-facebook" aria-hidden="true"></i></a>
+                </li>
+                <li>
+                  <a href="#" class="twitter w3l" title="Go to Our Twitter Account"><i
+                      class="fa-brands w3l fa-square-twitter" aria-hidden="true"></i></a>
+                </li>
+                <li>
+                  <a href="#" class="googleplus w3" title="Go to Our Google Plus Account"><i
+                      class="fa-brands w3 fa-square-google-plus" aria-hidden="true"></i></a>
+                </li>
+                <li>
+                  <a href="#" class="instagram wthree" title="Go to Our Instagram Account"><i
+                      class="fa-brands wthree fa-square-instagram" aria-hidden="true"></i></a>
+                </li>
+                <li>
+                  <a href="#" class="youtube w3layouts" title="Go to Our Youtube Channel"><i
+                      class="fa-brands w3layouts fa-square-youtube" aria-hidden="true"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="clearfix"></div>
+        </div>
+        <!-- copyright end -->
+      </div>
+      <!-- footer end  -->
+    </div>
+    <!-- home div end -->
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+  <script src="./js/script.js"></script>
+</body>
+
 </html>

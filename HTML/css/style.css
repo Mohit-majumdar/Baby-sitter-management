@@ -380,3 +380,48 @@ ul.social-icons li a.youtube:hover {
 
 
 
+
+
+
+ /* babysitters details start  */
+
+#bsDetails{
+    margin: 2% 20%;
+}
+
+#bsDetails>h2{
+    display: flex;
+    justify-content: center;
+}
+
+#ourBsCards{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.obsCard{
+    height: 25vh;
+    width: 28vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.obsCard>img{
+    height: 15vh;
+    width: 12vh;
+    object-fit: cover;
+    justify-content: space-between;
+}
+ /* babysitters details Ends  */
+
+
+
+
+
+
+
+
+
+
+
+
