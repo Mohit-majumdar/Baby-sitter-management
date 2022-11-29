@@ -404,11 +404,14 @@ ul.social-icons li a.youtube:hover {
 }
 
 .obsCard {
-    height: 25vh;
-    width: 28vw;
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    margin: 20px 0px;
+}
+
+.obsCard>div {
+    padding: 0 8px;
+    width: 20vw;
 }
 
 .obsCard>img {
@@ -419,8 +422,6 @@ ul.social-icons li a.youtube:hover {
 }
 
 /* babysitters details Ends  */
-
-
 
 
 
