@@ -1,0 +1,30 @@
+{% extends 'base.html' %} {% block body %}
+<!-- babysitters details start -->
+<div id="bsDetails">
+  <h2>Our Babysitters</h2>
+  
+  <div id="ourBsCards">
+    {% for babysitter in babysitters %}
+    <div class="obsCard">
+      <img
+        src="{{ babysitter.profilePic.url }}"
+        alt=""
+        srcset=""
+      />
+      <div>
+        <h3>{{ babysitter.name }}</h3>
+        <div>
+          <div>Language Knowns :{{ babysitter.languagesKnown }}</div>
+          <div>Experience : {{ babysitter.babySittersExp }}</div>
+          <div>Certificate :{{ babysitter.certificate }}</div>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+ 
+  </div>
+</div>
+<!-- babysitters details ends -->
+
+<!-- footer start  -->
+{% endblock %}

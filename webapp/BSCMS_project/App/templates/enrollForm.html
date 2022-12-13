@@ -1,0 +1,163 @@
+{% extends 'base.html' %}{% block body %}
+
+<!-- Enrollment form starts  -->
+<div class="container page_margin">
+  <h1 id="enroll-h1">Enroll Form</h1>
+  <h5 class="primary-h1">Primary Details</h5>
+  <form method="post" onsubmit="{ alert('you have successfully enrolled ')}">
+    {% csrf_token %}
+    <div class="row">
+      <div class="col">
+        <lebel for="firstName">Your Name</lebel>
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Your Name"
+          id="firstName"
+          name="name"
+          required
+        />
+      </div>
+      <div class="col">
+        <lebel for="mobileNumber">Mobile Number</lebel>
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Mobile Number"
+          id="mobileNumber"
+          name="mobile"
+          required
+        />
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <lebel for="altmobileNumber">alternate Mobile Number </lebel>
+        <input
+          type="text"
+          class="form-control"
+          placeholder="altmobileNumber"
+          id="firstName"
+          name="alt-mobile"
+          required
+        />
+      </div>
+      <div class="col">
+        <lebel for="email">Email</lebel>
+        <input
+          type="email"
+          class="form-control"
+          placeholder="Email"
+          id="email"
+          name="email"
+          required
+        />
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <lebel for="childName">Child Name</lebel>
+        <input
+          type="text"
+          class="form-control"
+          placeholder="child Name"
+          id="childName"
+          name="childName"
+          required
+        />
+      </div>
+      <div class="col">
+        <lebel for="dob">Date of birth</lebel>
+        <input
+          type="date"
+          class="form-control"
+          placeholder="Date of birth"
+          id="dob"
+          name="dob"
+          required
+        />
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <lebel for="childGen">Child Gender</lebel>
+        <select
+          type="text"
+          class="form-control"
+          placeholder="Child Gender"
+          id="childGen"
+          name="childGen"
+          required
+        >
+          <option selected>Choose..</option>
+          <option value="Boy">Boy</option>
+          <option value="Girl">Girl</option>
+        </select>
+      </div>
+      <div class="col">
+        <lebel for="program">Program</lebel>
+        <select
+          type="text"
+          class="form-control"
+          placeholder="Program"
+          id="dob"
+          name="program"
+          required
+        >
+          <option selected>Choose..</option>
+          <option value="2 day program">2 day program</option>
+          <option value="4 day program">4 day program</option>
+          <option value="1 Week">1 Week</option>
+        </select>
+      </div>
+    </div>
+    <div class="address">
+      <h5 class="adress-h2">Address Deatils</h5>
+      <div class="form-group">
+        <label for="inputAddress">Address</label>
+        <input
+          type="text"
+          class="form-control"
+          id="inputAddress"
+          placeholder="1234 Main St"
+          name="add"
+        />
+      </div>
+      <div class="form-group">
+        <label for="inputAddress2">Landmark</label>
+        <input
+          type="text"
+          class="form-control"
+          id="inputAddress2"
+          placeholder="Landmark ...."
+          name="landmark"
+        />
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="inputCity">City</label>
+          <input type="text" class="form-control" id="inputCity" name="city" />
+        </div>
+        <div class="form-group col-md-4">
+          <label for="inputState">State</label>
+          <input id="inputState" class="form-control" name="state" />
+        </div>
+        <div class="form-group col-md-2" style="margin-bottom: 15px">
+          <label for="inputZip">Zip</label>
+          <input
+            type="text"
+            class="form-control"
+            id="inputZip"
+            name="zipcode"
+          />
+        </div>
+      </div>
+
+      <button type="submit" class="btn btn-primary">Enroll Now</button>
+    </div>
+  </form>
+</div>
+<!-- Enrollment form end  -->
+
+<!-- footer start  -->
+{% endblock %}

@@ -1,0 +1,37 @@
+{% extends 'dashbase.html' %}{% block body %}
+
+    <table id="example" class="table table-striped" style="width: 100%">
+      <thead>
+        <tr>
+          <th>Service Image</th>
+          <th>Name</th>
+          
+          <th>Detail</th>
+          <th>Creation date</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for s in services %}
+        <tr>
+          <td><img class="w-25" src="{{ s.service_img.url }}" /></td>
+          <td>{{ s.service }}</td>
+          
+          <td>{{ s.serviceDetail| truncatechars:15 }}</td>
+          <td>{{ s.creationsDate| date:"d-M-Y" }}</td>
+          <td>
+            <a href="{% url 'edit_service' s.id %}"><i class="bx bx-edit" style="color: #274dd2"></i></a> |
+            <a href="{% url 'delete_object' 'service' s.id  %}"><i class="bx bx-trash" style="color: #f3280a"></i></a>
+          </td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  
+<script>
+  $(document).ready(function () {
+    $("#example").DataTable();
+  });
+</script>
+
+{% endblock %}

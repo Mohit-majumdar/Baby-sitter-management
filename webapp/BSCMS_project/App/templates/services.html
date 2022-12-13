@@ -1,0 +1,24 @@
+{% extends 'base.html' %} {% block body %}
+<div id="bcs">
+  <h2>Baby Care Services</h2>
+  <div id="cardsBcs">
+    {% for s in services %}
+    <div id="bcsCard">
+      <img
+        src="{{ s.service_img.url }}"
+        alt=""
+        srcset=""
+      />
+      <div>
+        <h3>{{ s.service }}</h3>
+        <p>
+          {{s.serviceDetail}}
+        </p>
+      </div>
+    </div>
+    {% endfor %}
+    
+  </div>
+</div>
+
+{% endblock %}

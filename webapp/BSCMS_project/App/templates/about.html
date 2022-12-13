@@ -1,0 +1,19 @@
+{% extends 'base.html' %} {% block body %}
+
+<div id="aboutUs">
+  <h3>{{ a.heading }}</h3>
+  <hr />
+  <div>
+    <img
+      src="https://safesitter.org/wp-content/uploads/2019/04/5-things-your-babysitter-secretly-wants-you-to-know.jpg"
+    />
+    <div>
+      <h2>{{ a.heading }}</h2>
+      <p>
+        {{ a.details}}
+      </p>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

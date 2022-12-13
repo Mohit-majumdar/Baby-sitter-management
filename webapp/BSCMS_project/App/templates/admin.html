@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% load static %}
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+  </head>
+
+  <body>
+    <div id="main">
+      <div id="mainAdmin">
+        <div id="adminCard">
+          <h2>Admin | BDCMS</h2>
+          <hr />
+          <p>Sign in to start your session</p>
+          <form method="post" id="loginForm">
+            {% csrf_token %}
+            {% if error %}
+            <p style="color:red;">Invalid Username or password</p>
+            {% endif %}
+            <input
+              type="text"
+              id="adminInputs"
+              name="email"
+              placeholder="Enter a gmail address"
+            />
+            <input
+              type="password"
+              id="adminInputs"
+              placeholder="password"
+              name="password"
+              minlength="8"
+              required
+            />
+            <button type="submit">Sign in</button>
+          </form>
+          <div id="atags">
+            <a class="btmAtag" href="{% url 'home' %}">Home Page</a>
+            <a class="btmAtag" href="">I forgot my password</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -5,9 +5,11 @@ from .models import *
 admin.site.register(AppAdmin_Contact)
 admin.site.register(BabySitters)
 admin.site.register(Contact)
-admin.site.register(enrollment)
+admin.site.register(Enrollment)
 admin.site.register(Service)
 admin.site.register(Subscriber)
+admin.site.register(Contact_us)
+admin.site.register(AboutUs)
 
 
 

@@ -1,0 +1,37 @@
+{% extends 'dashbase.html' %}{% block body %}
+
+    <table id="example" class="table table-striped" style="width: 100%">
+      <thead>
+        <tr>
+          <th>Profile Pic</th>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Mobile</th>
+          <th>Reg date</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for b in babysitters %}
+        <tr>
+          <td><img class="w-25" src="{{ b.profilePic.url }}" /></td>
+          <td>{{ b.name }}</td>
+          <td>{{ b.email }}</td>
+          <td>{{ b.mobileNo }}</td>
+          <td>{{ b.regDate| date:"d-M-Y" }}</td>
+          <td>
+            <a href="{% url 'edit_babysitter' b.id %}"><i class="bx bx-edit" style="color: #274dd2"></i></a> |
+            <a href="{% url 'delete_object' 'babysitter' b.id  %}"><i class="bx bx-trash" style="color: #f3280a"></i></a>
+          </td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  
+<script>
+  $(document).ready(function () {
+    $("#example").DataTable();
+  });
+</script>
+
+{% endblock %}

@@ -1,0 +1,45 @@
+{% extends 'dashbase.html' %}{% block body %}
+<div class="container">
+  <h3>Enrollments</h3>
+  <table id="example" class="table table-striped" style="width: 100%">
+    <thead>
+      <tr>
+        <th>S. No</th>
+        <th>Enrollment no.</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Contact Number</th>
+        <th>status</th>
+        <th>Enrollment Date</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for e in enrollments %}
+      <tr>
+        <td>{{forloop.counter}}</td>
+        <td>{{e.enrollNumber}}</td>
+        <td>{{e.yourName}}</td>
+        <td>{{e.email}}</td>
+        <td>{{e.phoneNumber}}</td>
+        <td>
+          {% if not e.status %} Not updated yet {% endif %} 
+          {% if e.status == "accept" %} Enrollment Accpeted {% endif %}
+          {% if e.status == "onhold"  %} Enrollment is Onhold {% endif %}
+          {% if e.status == "rejected"  %} Enrollmennt Rejected {% endif %}
+
+        </td>
+        <td>{{e.enrollmentDate}}</td>
+        <td><a href="{% url 'enroll_detail' e.id %}"><i class="fa-solid fa-eye"></i></a></td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+<script>
+  $(document).ready(function () {
+    $("#example").DataTable();
+  });
+</script>
+
+{% endblock %}

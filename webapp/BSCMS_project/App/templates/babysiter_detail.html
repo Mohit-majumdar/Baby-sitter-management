@@ -1,0 +1,30 @@
+{% extends 'base.html' %}{% block body %}
+
+<div
+  class="card"
+  style="
+    width: 30rem;
+    display: flex;
+    margin-left: 35%;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+  "
+>
+  <img src="{{ babysitter.profilePic.url }}" class="card-img-top" alt="..." style="height: 40vh;" />
+  <div class="card-body">
+    <h5 class="card-title">{{ babysitter.name }}</h5>
+    <p class="card-text">
+      {{ babysitter.descreption }}
+    </p>
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">Mobile: {{ babysitter.mobileNo }}</li>
+    <li class="list-group-item">Expriance: {{ babysitter.babySittersExp }}</li>
+    <li class="list-group-item">Language Known: {{ babysitter.languagesKnown}}</li>
+    <li class="list-group-item">Address: {{ babysitter.address }}</li>
+    <li class="list-group-item">City: {{ babysitter.city }}</li>
+  </ul>
+ 
+</div>
+
+{% endblock %}

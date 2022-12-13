@@ -1,0 +1,335 @@
+{% extends 'dashbase.html' %}{% block body %}{% load static %}
+
+<div class="container-xl px-4 mt-4">
+  <!-- Account page navigation-->
+
+  <div class="row">
+    <div class="col-xl-8" style="width: 100%">
+      <!-- Account details card-->
+      <div class="card mb-4">
+        <div class="card-header">
+          Enrollmennt Details ({{ e.enrollNumber }})
+        </div>
+        <div class="card-body">
+          <form>
+            <!-- Form Row-->
+            <div class="row gx-3 mb-3">
+              <!-- Form Group (first name)-->
+              <div class="col-md-6">
+                <label class="small mb-1" for="inputFirstName"
+                  >Gardiren Name</label
+                >
+                <input
+                  disabled
+                  class="form-control"
+                  id="inputFirstName"
+                  type="text"
+                  placeholder="Enter your first name"
+                  value="{{ e.yourName }}"
+                />
+              </div>
+              <!-- Form Group (last name)-->
+              <div class="col-md-6">
+                <label class="small mb-1" for="inputLastName">Child Name</label>
+                <input
+                  disabled
+                  class="form-control"
+                  id="inputLastName"
+                  type="text"
+                  placeholder="Enter your last name"
+                  value="{{ e.childName }}"
+                />
+              </div>
+            </div>
+            <!-- Form Row        -->
+            <div class="row gx-3 mb-3">
+              <!-- Form Group (organization name)-->
+              <div class="col-md-6">
+                <label class="small mb-1" for="inputOrgName"
+                  >Mobile Number</label
+                >
+                <input
+                  disabled
+                  class="form-control"
+                  id="inputOrgName"
+                  type="text"
+                  placeholder="Enter your organization name"
+                  value="{{ e.phoneNumber }}"
+                />
+              </div>
+              <!-- Form Group (location)-->
+              <div class="col-md-6">
+                <label class="small mb-1" for="inputLocation"
+                  >Alternate Number</label
+                >
+                <input
+                  disabled
+                  class="form-control"
+                  id="inputLocation"
+                  type="text"
+                  placeholder="Enter your location"
+                  value="{{ e.alternateNumber }}"
+                />
+              </div>
+            </div>
+            <!-- Form Group (email address)-->
+            <div class="mb-3">
+              <label class="small mb-1" for="inputEmailAddress"
+                >Email address</label
+              >
+              <input
+                disabled
+                class="form-control"
+                id="inputEmailAddress"
+                type="email"
+                placeholder="Enter your email address"
+                value="{{e.email}}"
+              />
+            </div>
+            <!-- Form Row-->
+
+            <div class="row gx-3 mb-3">
+              <!-- Form Group (phone number)-->
+              <div class="col-md-6">
+                <label class="small mb-1" for="inputPhone">Child Gender</label>
+                <input
+                  disabled
+                  class="form-control"
+                  id="inputPhone"
+                  type="text"
+                  placeholder="Enter your phone number"
+                  value="{{ e.childGender }}"
+                />
+              </div>
+              <!-- Form Group (birthday)-->
+              <div class="col-md-6">
+                <label class="small mb-1" for="inputBirthday">Child DOB</label>
+                <input
+                  disabled
+                  class="form-control"
+                  id="inputBirthday"
+                  type="text"
+                  name="birthday"
+                  placeholder="Enter your birthday"
+                  value="{{ e.dob| date:'m/d/Y' }}"
+                />
+              </div>
+            </div>
+            <div class="row gx-3 mb-3">
+              <!-- Form Group (phone number)-->
+              <div class="col-md-6">
+                <label class="small mb-1" for="inputPhone">Address</label>
+                <input
+                  disabled
+                  class="form-control"
+                  id="inputPhone"
+                  type="tel"
+                  placeholder="Enter your phone number"
+                  value="{{ e.address }}"
+                />
+              </div>
+              <!-- Form Group (birthday)-->
+              <div class="col-md-6">
+                <label class="small mb-1" for="inputBirthday">State</label>
+                <input
+                  disabled
+                  class="form-control"
+                  id="inputBirthday"
+                  type="text"
+                  name="birthday"
+                  placeholder="Enter your birthday"
+                  value="{{ e.state }}"
+                />
+              </div>
+            </div>
+            <div class="row gx-3 mb-3">
+              <!-- Form Group (phone number)-->
+              <div class="col-md-6">
+                <label class="small mb-1" for="inputPhone">City</label>
+                <input
+                  disabled
+                  class="form-control"
+                  id="inputPhone"
+                  type="tel"
+                  placeholder="Enter your phone number"
+                  value="{{ e.city }}"
+                />
+              </div>
+              <!-- Form Group (birthday)-->
+              <div class="col-md-6">
+                <label class="small mb-1" for="inputBirthday">Zip code</label>
+                <input
+                  disabled
+                  class="form-control"
+                  id="inputBirthday"
+                  type="text"
+                  name="birthday"
+                  placeholder="Enter your birthday"
+                  value="{{ e.zipcode }}"
+                />
+              </div>
+            </div>
+            <div class="row gx-3 mb-3">
+              <!-- Form Group (phone number)-->
+              <div class="col-md-6">
+                <label class="small mb-1" for="inputPhone">Land Mark</label>
+                <input
+                  disabled
+                  class="form-control"
+                  id="inputPhone"
+                  type="tel"
+                  placeholder=""
+                  value="{{ e.landmark }}"
+                />
+              </div>
+              <!-- Form Group (birthday)-->
+              <div class="col-md-6">
+                <label class="small mb-1" for="inputBirthday"
+                  >Enrollmennt date</label
+                >
+                <input
+                  disabled
+                  class="form-control"
+                  id="inputBirthday"
+                  type="text"
+                  name="birthday"
+                  value="{{ e.enrollmentDate  }}"
+                />
+              </div>
+            </div>
+            <div class="row gx-3 mb-3">
+              <!-- Form Group (phone number)-->
+              <div class="col-md-6">
+                <label class="small mb-1" for="inputPhone">Remark</label>
+                <input
+                  disabled
+                  class="form-control"
+                  id="inputPhone"
+                  type="tel"
+                  placeholder="Enter your phone number"
+                  value="{{ e.remark }}"
+                />
+              </div>
+              <!-- Form Group (birthday)-->
+              <div class="col-md-6">
+                <label class="small mb-1" for="inputBirthday"
+                  >Remark Date</label
+                >
+                <input
+                  disabled
+                  class="form-control"
+                  id="inputBirthday"
+                  type="text"
+                  name="birthday"
+                  placeholder="Enter your birthday"
+                  value="{{ e.remarkDate }}"
+                />
+              </div>
+            </div>
+            <div class="row gx-3 mb-3">
+              <!-- Form Group (phone number)-->
+              <div class="col-md-6">
+                <label class="small mb-1" for="inputPhone">Status</label>
+                <input
+                  disabled
+                  class="form-control"
+                  id="inputPhone"
+                  type="tel"
+                  placeholder=""
+                  value="{{ e.status }}"
+                />
+              </div>
+              <!-- Form Group (birthday)-->
+              <div class="col-md-6">
+                <label class="small mb-1" for="inputBirthday"
+                  >Program Name</label
+                >
+                <input
+                  disabled
+                  class="form-control"
+                  id="inputBirthday"
+                  type="text"
+                  name="birthday"
+                  value="{{ e.programName  }}"
+                />
+              </div>
+            </div>
+            <!-- Save changes button-->
+            {% if not e.status or e.status == "onhold" %}
+            <button
+              class="btn btn-primary"
+              type="button"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              Take Action
+            </button>
+            {% endif %}
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal -->
+<div
+  class="modal fade"
+  id="exampleModal"
+  tabindex="-1"
+  aria-labelledby="exampleModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Update Status</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body">
+        <form method="post">
+          {% csrf_token %}
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Remark</label>
+            <input
+              type="text"
+              class="form-control"
+              id="exampleInputEmail1"
+              aria-describedby="emailHelp"
+              name="remark"
+              value="{{ e.remark }}"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Status</label>
+            <select
+              class="form-control"
+              name="status"
+              id="exampleInputPassword1"
+            >
+              <option value="" selected>select status</option>
+              <option value="accept">Accepted</option>
+              <option value="onhold">Onhold</option>
+              <option value="rejected">Rejected</option>
+            </select>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="submit" class="btn btn-primary">Save changes</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

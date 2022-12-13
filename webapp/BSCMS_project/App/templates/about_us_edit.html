@@ -1,0 +1,88 @@
+{% extends 'dashbase.html' %}{% block body %}
+{% if a_bool %}
+<div style="width: 50%">
+  <h2>About Us Page</h2>
+  <form method="post" onsubmit="{alert('about up updated sucessfully')}">
+    {% csrf_token %}
+    <div class="form-group">
+      <label for="exampleInputEmail1">Heading</label>
+      <input
+        type="text"
+        class="form-control"
+        id="exampleInputEmail1"
+        aria-describedby="emailHelp"
+        placeholder="Enter heading here"
+        name="heading" 
+        value="{{ a.heading }}"
+        
+      />
+    </div>
+    <div class="form-group">
+      <label for="exampleInputPassword1">Content</label>
+      <textarea
+        type="text"
+        class="form-control"
+        id="exampleInputPassword1"
+        placeholder="Enter content here"
+        name="Content" 
+      ></textarea>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
+<script>
+    el = document.getElementById("exampleInputPassword1")
+    el.value = "{{ a.details }}"
+</script>
+{% endif %}
+{% if c_bool %}
+<div style="width: 50%">
+  <h2>Contact Us Page</h2>
+  <form method="post" onsubmit="{alert('Contact updated successfully')}" >
+    {% csrf_token %}
+    <div class="form-group">
+      <label for="exampleInputEmail1">Mobile Number</label>
+      <input
+        type="text"
+        class="form-control"
+        id="exampleInputEmail1"
+        aria-describedby="emailHelp"
+        placeholder="Enter heading here"
+        name="mobile" 
+        value="{{ c.phone }}"
+        
+      />
+    </div>
+    <div class="form-group">
+      <label for="exampleInputPassword1">Address</label>
+      <textarea
+        type="text"
+        class="form-control"
+        id="exampleInputPassword1"
+        placeholder="Enter content here"
+        name="address" 
+      ></textarea>
+    </div>
+     <div class="form-group">
+      <label for="exampleInputEmail1">Email</label>
+      <input
+        type="email"
+        class="form-control"
+        id="exampleInputEmail1"
+        aria-describedby="emailHelp"
+        placeholder="Enter heading here"
+        name="email" 
+        value="{{ c.email }}"
+        
+      />
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
+<script>
+    el = document.getElementById("exampleInputPassword1")
+    el.value = "{{ c.address }}"
+</script>
+{% endif %}
+{% endblock %}
